@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+html,body,main{
+    height: 100%;
+}
+
+header{
+    position: absolute;
+    top: 10px;
+    width: 100%;
+}
+.icon{
+    float: right;
+    margin-right: 20px;
+    font-size: 20px;
+    color: #444;
+}
+
+main{
+    background:url("bgp.jpg") center center no-repeat;
+}
+.flip-model{
+    display: none;
+}
+.flip-model .model-login,
+.flip-model .model-register {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    backface-visibility: hidden;
+    width: 400px;
+    padding: 16px;
+    border: 1px solid #444;
+    background-color: #fff;
+    box-shadow: 0 0 2px rgba(0,0,0,0.38);
+}
+
+.flip-model.login-ct .model-login,
+.flip-model.register-ct .model-register{
+    transform:translate(-50%,-50%)  rotateY(0deg);
+    transition: all 1s;
+}
+.flip-model.register-ct .model-login,
+.flip-model.login-ct .model-register{
+    transform:translate(-50%,-50%)  rotateY(180deg);
+    transition: all 1s;
+}
+.error-msg{
+    font-size: 12px;
+    color: red;
+    padding: 10px 40px 0;
+}
+.icon-close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.tab{
+    text-align: center;
+}
+.tab a {
+    padding: 0 10px;
+    font-size: 18px;
+    color: #444;
+}
+.form{
+    padding: 10px 40px 20px;
+    overflow: auto;
+}
+.form .ipt-ct{
+    position: relative;
+    margin-top: 10px;
+}
+.ipt-ct>input{
+    width: 100%;
+    font-size: 16px;
+    line-height: 2;
+    padding-left: 30px;
+}
+.ipt-ct>i{
+    position: absolute;
+    top: 10px;
+    left: 12px;
+}
+.form>.submit{
+    float: left;
+    margin-top: 10px;
+    padding: 6px 10px;
+    font-size: 16px;
+    color: #444;
+    background-color: #fff;
+    border: none;
+    box-shadow: 0 0 1px rgba(0,0,0,0.38);
+}
+.model-register .tab:last-child,
+.tab .active {
+    border-bottom: 2px solid #000;
+    color: #000;
+}

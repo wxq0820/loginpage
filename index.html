@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录|注册</title>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script type="text/javascript" src="index.js" defer></script>
+</head>
+<body>
+<header>
+    <a class="icon" href="#"><i class="fa fa-user-circle-o"></i></a>
+</header>
+<main>
+    <div class="flip-model register-ct">
+        <div class="model model-login">
+            <a class="icon-close" href="#"><i class="fa fa-window-close"></i></a>
+            <div class="tab">
+                <a class="login active" href="#">登录</a>
+                <a class="register" href="#">注册</a>
+            </div>
+            <div>
+                <div class="error-msg"></div>
+                <form class="form" action="#" method="post">
+                    <div class="ipt-ct">
+                        <i class="fa fa-user"></i>
+                        <input class="username" type="text" placeholder="请输入账号">
+                    </div>
+                    <div class="ipt-ct">
+                        <i class="fa fa-lock"></i>
+                        <input class="password" type="password" placeholder="请输入密码">
+                    </div>
+                    <input class="submit" type="submit" value="登录">
+                </form>
+            </div>
+
+        </div>
+        <div class="model model-register">
+            <a class="icon-close" href="#"><i class="fa fa-window-close"></i></a>
+            <div class="tab">
+                <a class="login" href="#">登录</a>
+                <a class="register active" href="#">注册</a>
+            </div>
+            <div>
+                <div class="error-msg"></div>
+                <form class="form" action="#" method="post">
+                    <div class="ipt-ct">
+                        <i class="fa fa-user"></i>
+                        <input class="username" type="text" placeholder="请输入账号">
+                    </div>
+                    <div class="ipt-ct">
+                        <i class="fa fa-lock"></i>
+                        <input class="password" type="password" placeholder="请输入密码">
+                    </div>
+                    <div class="ipt-ct">
+                        <i class="fa fa-lock"></i>
+                        <input class="password1" type="password" placeholder="请确认密码">
+                    </div>
+                    <input class="submit" type="submit" value="注册">
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
